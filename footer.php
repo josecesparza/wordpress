@@ -1,6 +1,7 @@
-	<footer>
-		<?php echo get_bloginfo('name'); ?> © <?php echo date_i18n(date('Y')); ?>
-	</footer>
+<footer class="blog-footer">
+    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p><a href="#">Back to top</a></p>
+</footer>
+<?php wp_footer(); ?>
 </body>
-
 </html>
