@@ -7,6 +7,7 @@ Version: 1.0
 */
 
 
+
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
@@ -169,3 +170,32 @@ body {
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
+
+  
+#landing {
+  height: 100px;
+  width: 100%;
+  background: #f0f0f0;
+  background-size: cover;
+  background-image: url("nikola.png");
+}
+
+@media screen and (min-width: 1200px) {
+  #landing {
+    height: 150px;
+  }
+}
+
+.main-container {
+  padding: 2rem 0;
+}
+
+.content {
+  padding: 4rem 0;
+}
+
+footer {
+  height: 50px;
+  background: #f0f0f0;
+  width: 100%;
+}

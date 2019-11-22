@@ -1,11 +1,11 @@
-</div><!-- /.row -->
+<footer>
+		<div class="content copyright">
+			<p>
+				<?php echo get_bloginfo( 'name' ); ?> © <?php echo date_i18n( date('Y') ); ?>
+			</p>		
+		</div>
+	</footer>
+	<?php wp_footer();?>
 
-</div><!-- /.container -->
-
-<footer class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p><a href="#">Back to top</a></p>
-</footer>
-<?php wp_footer(); ?>
-</body>
+	</body>
 </html>
