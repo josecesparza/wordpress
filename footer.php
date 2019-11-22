@@ -1,11 +1,6 @@
-<footer>
-		<div class="content copyright">
-			<p>
-				<?php echo get_bloginfo( 'name' ); ?> © <?php echo date_i18n( date('Y') ); ?>
-			</p>		
-		</div>
+	<footer>
+		<?php echo get_bloginfo('name'); ?> © <?php echo date_i18n(date('Y')); ?>
 	</footer>
-	<?php wp_footer();?>
+</body>
 
-	</body>
 </html>
