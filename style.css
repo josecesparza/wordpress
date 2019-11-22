@@ -199,3 +199,28 @@ footer {
   background: #f0f0f0;
   width: 100%;
 }
+
+/*NAVBAR*/
+#menu-firstm {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+
+#menu-firstm a {
+  color: rgba(255, 255, 255, .5);
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #menu-firstm {
+      -ms-flex-direction: row;
+      flex-direction: row;
+  }
+}

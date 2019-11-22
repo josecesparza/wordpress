@@ -7,7 +7,7 @@ function load_stylesheets(){
     wp_register_style('woocommerce', get_template_directory_uri() . '/woocommerce.css', '', 1, 'all' );
     wp_enqueue_style( 'woocommerce'); 
    
-    wp_register_style('style', get_template_directory_uri() . 'style.css', '', 1, 'all' );
+    wp_register_style('style', get_template_directory_uri() . '/style.css', '', 1, 'all' );
     wp_enqueue_style( 'style'); 
 }
 
