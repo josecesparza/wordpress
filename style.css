@@ -429,3 +429,12 @@ ul.tabs li::after {
 .stars span a {
   color: #ff6000 !important;
 }
+
+/* CHECKOUT */
+.checkout-button{
+  background-color: #4aca5d !important;
+}
+
+#coupon_code{
+  width: 50vh;
+}

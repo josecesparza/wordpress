@@ -1,6 +1,5 @@
 <footer class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a>.</p>
-    <p><a href="#">Back to top</a></p>
+    <p>Webshop template built for <a href="https://www.ucn.dk/english">UCN</a>.</p>
 </footer>
 <?php wp_footer(); ?>
 </body>
