@@ -170,18 +170,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 /*FRONT PAGE*/
 
+#landing-title{
+  color: #f6b77fb8;
+  font-family: 'Franklin Gothic Medium';
+}
+
 #landing {
-  height: 300px;
+  height: calc(100vh - 7vh);
   width: 100%;
   background: #f0f0f0;
   background-size: cover;
-  background-image: url("nikola.png");
-}
-
-@media screen and (min-width: 1200px) {
-  #landing {
-    height: 150px;
-  }
+  background-image: url("landing.jpg");
 }
 
 .main-container {
@@ -198,9 +197,13 @@ footer {
   width: 100%;
 }
 
+.tnp-submit {
+  background-color: #ff6000 !important;
+}
+
 /*NAVBAR*/
 
-#menu-firstm {
+#menu-left-menu, #menu-right-menu {
   display: flex;
   padding-left: 0;
   margin-bottom: 0;
@@ -209,8 +212,20 @@ footer {
   box-sizing: border-box;
 }
 
-#menu-firstm a {
-  color: rgba(255, 255, 255, .5);
+#main-header {
+  background: #ff6000;
+  display: flex;
+  justify-content: space-between;
+  height: 7vh;
+}
+
+#menu-right-menu {
+  float: right;
+}
+
+#menu-left-menu a, #menu-right-menu a {
+  /* color: rgba(255, 255, 255, .5); */
+  color: #fff;
   display: block;
   padding: .5rem 1rem;
   text-decoration: none;
@@ -218,8 +233,199 @@ footer {
 }
 
 @media (min-width: 992px) {
-  #menu-firstm {
+  #menu-left-menu, #menu-right-menu {
     -ms-flex-direction: row;
     flex-direction: row;
   }
+}
+
+/*SideBar My Account Woocommerce*/
+
+.woocommerce-MyAccount-navigation {
+  text-decoration: none;
+}
+
+/*Product Page*/
+
+div.quantity {
+  margin: 0 !important;
+}
+
+.quantity input {
+  border: 1px solid #ff6000;
+  border-radius: 5px;
+}
+
+form.cart .quantity input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cart button {
+  border: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  background: #ff6000 !important;
+}
+
+.quantity, .quantity input, .cart button {
+  height: 100%;
+}
+
+form.cart {
+  height: 2.2em;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  background: #fff;
+}
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #FAFAFA;
+  color: #fff;
+  transition: all 0.3s;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+/*SIDEBAR*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a, a:hover, a:focus {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar .sidebar-left {
+  padding: 20px 0;
+}
+
+#sidebar ul.product-categories {
+  padding: 2px 0;
+  border-bottom: 1px solid #47748b;
+  list-style-type: none;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  float: left;
+}
+
+#sidebar ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#sidebar ul li span {
+  display: block;
+  float: left;
+  color: #ff6000;
+}
+
+#sidebar ul li:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebar ul li.active>a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+.aws-search-form {
+  border-radius: 5px;
+  border: 1px solid #ff6000;
+  width: 75%;
+}
+
+.aws-container .aws-search-form * {
+  border: 0 !important;
+  border-radius: 5px !important;
+}
+
+.goodbye {
+  display: none;
+}
+
+#product-area {
+  margin: 0 270px;
+}
+
+/* Description Tabs */
+
+.reviews_tab, .description_tab {
+  background: #ff6000 !important;
+  border-color: #ff6000 !important;
+}
+
+.reviews_tab a, .description_tab a {
+  color: #fff !important;
+}
+
+.active, .active a {
+  color: #ff6000 !important;
+  background: white !important;
+}
+
+ul.tabs::before {
+  border-color: #ff6000 !important;
+}
+
+ul.tabs li::before {
+  border-color: #ff6000 !important;
+  box-shadow: none !important;
+}
+
+ul.tabs li::after {
+  border-color: #ff6000 !important;
+  box-shadow: none !important;
+}
+
+.product-type-simple a.button {
+  color: #fff !important;
+  background: #ff6000 !important;
+}
+
+.star-rating {
+  color: #ff6000 !important;
+}
+
+.flex-control-thumbs {
+  margin-top: 2rem !important;
+}
+
+.stars span a {
+  color: #ff6000 !important;
 }

@@ -9,10 +9,14 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-header">
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-header">
         <?php
         wp_nav_menu(array(
-            'theme_location' => 'top-nav'
+            'theme_location' => 'top-left-nav'
+        ));
+
+        wp_nav_menu(array(
+            'theme_location' => 'top-right-nav'
         ));
         ?>
     </header>

@@ -2,18 +2,16 @@
 
 <div id="landing">
     <div class="container d-flex align-items-center justify-content-center h-100">
-        <h1>GET A 15% DISCOUNT!*</h1>
+        <h1 id="landing-title">Welcome to eBast!</h1>
     </div>
 </div>
 
 <div class="content">
     <div class="container">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <h1>Best Sellers</h1>
+        <?php echo do_shortcode('[best_selling_products columns="3" limit="3"]'); ?>
 
-                <?php the_content(); ?>
-
-        <?php endwhile;
-        else : endif; ?>
+        <h2>Join Us And Get 15% Off Your First Purchase</h2>
         <!-- Widget area -->
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('header-sidebar')) :
 
